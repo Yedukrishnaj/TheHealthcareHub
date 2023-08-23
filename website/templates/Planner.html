@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block title %}DietPlanner{% endblock %}
+{% block content%}
+
+<h1>Dietary Planner</h1>
+Introducing Our Dietary Planner Tool:
+Eating healthy has never been easier! Our innovative Dietary Planner Tool helps you create personalized meal plans that align with your dietary preferences and goals. Whether you're a vegan, vegetarian, or aiming for a balanced diet, our tool generates customized meal plans that suit your lifestyle. Simply select your dietary preference and goal, and our tool will curate a diverse selection of recipes for you to enjoy. Worried about grocery shopping? Our tool also creates a convenient shopping list based on your meal plan. Say goodbye to dietary confusion and hello to a healthier you with our user-friendly Dietary Planner Tool!"
+
+Feel free to adjust and customize this description to match the tone and style of your website.
+    <p>Plan your meals based on your dietary preferences and goals.</p>
+    
+    <main>
+      <section id="preferences">
+        <h2>Preferences</h2>
+        <form id="preferencesForm" class="row g-3">
+          <div class="col-md-6">
+            <label for="diet" class="form-label">Select Your Diet:</label>
+            <select id="diet" name="diet" class="form-select">
+              <option value="balanced">Balanced</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <!-- Add more options -->
+            </select>
+          </div>
+          
+          <div class="col-md-6">
+            <label for="goal" class="form-label">Select Your Goal:</label>
+            <select id="goal" name="goal" class="form-select">
+              <option value="maintain">Maintain</option>
+              <option value="lose">Lose Weight</option>
+              <option value="gain">Gain Weight</option>
+              <!-- Add more options -->
+            </select>
+          </div>
+          
+          <div class="col-12 mt-3">
+            <button type="submit" class="btn btn-primary">Generate Meal Plan</button>
+          </div>
+        </form>
+      </section>
+      
+      
+    
+        <section id="mealPlan">
+          <h2>Meal Plan</h2>
+          <div id="mealPlanContent">
+            <!-- Display generated meal plan here -->
+          </div>
+        </section>
+    
+        <section id="shoppingList">
+          <h2>Shopping List</h2>
+          <ul id="shoppingListContent">
+            <!-- Display shopping list here -->
+          </ul>
+        </section>
+      </main>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+{% endblock %}

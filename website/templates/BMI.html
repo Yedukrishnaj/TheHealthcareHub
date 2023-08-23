@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block title %}BMI {% endblock %}
+{% block content%}
+
+<main class="container">
+    <h1>BMI Calculator</h1>
+    <p>The BMI (Body Mass Index) calculator is a simple and widely used tool that helps individuals assess their body weight in relation to their height. It is commonly used to estimate whether a person is underweight, normal weight, overweight, or obese, and it serves as a general indicator of potential health risks associated with body weight.</p>
+
+    <h2>How It Works:</h2>
+    <ol>
+      <li><strong>Input Height and Weight:</strong> The user is required to input their height and weight into the BMI calculator. Height is usually entered in centimeters, and weight in kilograms.</li>
+      <li><strong>Calculation:</strong> Once the user inputs their height and weight, the calculator applies the BMI formula to calculate the BMI value.</li>
+      <li><strong>BMI Result:</strong> The BMI value is then presented to the user, typically rounded to two decimal places. The result provides a numerical representation of the individual's body mass index.</li>
+      <li><strong>BMI Categories:</strong> Based on the calculated BMI value, the calculator categorizes the individual into one of the following categories:
+        <ul>
+          <li>Underweight: BMI less than 18.5</li>
+          <li>Normal Weight: BMI between 18.5 and 24.9</li>
+          <li>Overweight: BMI between 25 and 29.9</li>
+          <li>Obese: BMI 30 or greater</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Limitations:</h2>
+    <p>BMI has some limitations, particularly in certain populations. It may not accurately reflect the health status of athletes, elderly individuals, or those with a high muscle mass. Therefore, it is best used as a screening tool rather than a definitive measure of health.</p>
+    
+    <p>Remember that BMI is just one of many factors that contribute to overall health. A healthy lifestyle, balanced diet, regular physical activity, and consultation with healthcare professionals are essential for maintaining good health and well-being.</p>
+  </main>
+
+<div class="BMI">
+    <h1>BMI Calculator</h1>
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" placeholder="Enter your height">
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" placeholder="Enter your weight">
+    <button class="BMI-btn" onclick="calculateBMI()">Calculate BMI</button>
+    <div id="result"></div>
+  </div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+
+
+
+
+{% endblock %}

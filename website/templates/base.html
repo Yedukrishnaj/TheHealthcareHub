@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+    
+    <title>{% block title %}{% endblock %}</title>
+  </head>
+  <body style=" height: 5pc;">
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        
+        <div class="navbar-nav">
+          
+          <a class="nav-item nav-link" id="home" style="font-size: x-large;" href="/"><h4>The Healthcare Hub</h4></a>
+        </div>
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item nav-link" id="home"href="/">Home</a>
+          <a class="nav-item nav-link" id="About" href="#about">About Us</a>
+          <a class="nav-item nav-link" id="Contact" href="/contact">Feedback</a>
+        </div>
+        
+    </nav>
+    <br>
+    
+    <div class="container">{% block content %} {% endblock %}</div>
+    
+    <div id="mybutton">
+      <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting-o comment"></i> <i class="fa fa-close close"></i> </label> <div class="wrapper"> <div class="header"> <h6>Let's Chat - Online</h6> </div> <iframe src="https://webchat.botframework.com/embed/medbot_bot?s=05Njqn3q8zg.Q7oVeKEk3Q6UceMw7Cdp5C5zfsxVry88ICtB-xw7HDU" style="width: 300px;height: 550px;box-shadow: 0 20px 80px rgba(0,0,0,.6);border-radius: 5px;overflow: hidden;border: none;float: right;;"></iframe> </div> </div>
+      </div>
+    
+    <!-- Footer Section -->
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        
+        <img src="" alt=" Logo">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#medical-issues">Medical Issues</a></li>
+          <li><a href="/contact">Feedback</a></li>
+         
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p>Contact Us:</p>
+        <p>Email: </p>
+        <p>Phone: </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p> 2023 The Healthcare Hub.</p>
+      
+    </div>
+  </div>
+</footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    
+
+  </body>
+</html>
