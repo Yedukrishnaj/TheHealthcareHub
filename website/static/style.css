@@ -694,3 +694,11 @@ input {
 #shoppingListContent li:hover::before {
   transform: scale(1.1);
 }
+
+#resetButton {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}

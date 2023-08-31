@@ -28,3 +28,12 @@ function calculateBMI() {
     resultDiv.textContent = `Your BMI is ${roundedBMI}. You are ${category}.`;
   }
   
+  const resetButton = document.getElementById('resetButton');
+resetButton.addEventListener('click', function() {
+  // Clear input fields
+  document.getElementById('weight').value = '';
+  document.getElementById('height').value = '';
+  
+  // Clear previous results if any
+  document.getElementById('bmiResult').textContent = '';
+});
