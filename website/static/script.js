@@ -177,7 +177,6 @@ const recipes = [
       { name: 'Feta Cheese', quantity: '1/4 cup', unit: 'cup' }
     ]
   },
-  // Add more recipes here
 ];
 
   
