@@ -24,6 +24,9 @@ TheHealthcareHub is a comprehensive healthcare platform designed to assist inter
 Link to Deployment: https://thehealthcarehub.pythonanywhere.com/
 Link to Demo Video: https://youtu.be/pLEux1Dbj24
 
+Report
+
+
 If you have any questions or need assistance, feel free to contact yedukrishnaj@gmail.com.
 
 Happy coding!
