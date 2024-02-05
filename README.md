@@ -25,7 +25,7 @@ Link to Deployment: https://thehealthcarehub.pythonanywhere.com/
 Link to Demo Video: https://youtu.be/pLEux1Dbj24
 
 Report
-
+https://github.com/Yedukrishnaj/TheHealthcareHub/blob/main/Report.pdf
 
 If you have any questions or need assistance, feel free to contact yedukrishnaj@gmail.com.
 
